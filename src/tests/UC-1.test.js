@@ -11,11 +11,11 @@ describe("UC-1", async () => {
 	it("Test Login form with empty credentials", async () => {
 
 		// 1. Type an accepted username into "Username" field
-		const username = await loginPage.credentials.getRandomUsername();
+		const username = await loginPage.credentials.randomUsername;
 		await loginPage.loginBox.field("username").setValue(username);
 
 		// 2. Type the password into the "Password" field
-		const password = await loginPage.credentials.getPassword();
+		const password = await loginPage.credentials.password;
 		await loginPage.loginBox.field("password").setValue(password);
 
 		// 3. Clear the input in the "Username" field
@@ -47,7 +47,7 @@ describe("UC-1", async () => {
 		await expect(error_message).toHaveText(
       expect.stringContaining("Username is required")
     );
-    
+
 	});
 
 });
