@@ -40,11 +40,11 @@ describe("UC-1", async () => {
 		await pages('login').loginBox.loginBtn.click();
 
 		// 6. Check the error message: "Username is required"
-    const error_message = await pages('login').loginBox.errorMsg;
-    await error_message.waitForDisplayed();
+    	const error_message = await pages('login').loginBox.errorMsg;
+    	await error_message.waitForDisplayed();
 		await expect(error_message).toHaveText(
-      expect.stringContaining("Username is required")
-    );
+      		expect.stringContaining("Username is required")
+    	);
 
 	});
 
