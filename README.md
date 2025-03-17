@@ -1,3 +1,5 @@
+# Automated Testing in JavaScript: Final Task
+
 ## Task description
 
 Launch URL: https://www.saucedemo.com/
@@ -41,7 +43,7 @@ Provide parallel execution, add logging for tests and use Data Provider to param
 
 Please, add task description as README.md into your solution!
 
-** To perform the task use the various of additional options: **
+**To perform the task use the various of additional options:**
 
 * Test Automation tool: WebDriverIO;
 
