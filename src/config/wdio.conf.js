@@ -22,8 +22,8 @@ exports.config = {
     //
     specs: [
         // './../tests/**/*.test.js'
-        './../tests/**/UC-1.test.js'
-        // './../tests/**/UC-2.test.js'
+        './../tests/**/UC-1.test.js',
+        './../tests/**/UC-2.test.js',
     ],
     // Patterns to exclude.
     exclude: [
@@ -45,7 +45,7 @@ exports.config = {
     // and 30 processes will get spawned. The property handles how many capabilities
     // from the same test should run tests.
     //
-    maxInstances: 1,
+    maxInstances: 3,
     //
     // If you have trouble getting all important capabilities together, check out the
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
@@ -95,9 +95,7 @@ exports.config = {
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
     // baseUrl: 'http://localhost:8080',
-    //
-
-
+    baseUrl: 'https://www.saucedemo.com',
 
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
