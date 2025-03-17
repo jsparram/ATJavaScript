@@ -22,8 +22,6 @@ exports.config = {
     //
     specs: [
         './../tests/**/*.test.js'
-        // './../tests/**/UC-1.test.js',
-        // './../tests/**/UC-2.test.js',
         // './../tests/**/UC-3.test.js',
     ],
     // Patterns to exclude.
